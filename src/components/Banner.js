@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
-import request from "./requst";
+import axios from "../axios";
+import request from "../requst";
 import "./Banner.css";
 const Banner = () => {
   const [movie, setMoive] = useState([]);
@@ -27,6 +27,7 @@ const Banner = () => {
   };
   return (
     <header
+    data-test ="bannerHeader"
       className="banner"
       style={{
         backgroundSize: "cover",
@@ -36,8 +37,8 @@ const Banner = () => {
         backgroundPosition: "center center",
       }}
     >
-      <div className="banner__contents">
-        <h1 className="banner__title">
+      <div className="banner__contents" data-test="banner-content">
+        <h1 className="banner__title" data-test='title'>
           {movie?.title || movie?.name || movie?.orignal_name}
         </h1>
         <div className="banner__buttons">
