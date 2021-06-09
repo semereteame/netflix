@@ -1,8 +1,8 @@
 import React from "react";
-import Row from "./Row";
-import Banner from './Banner'
+import Row from "./components/Row";
+import Banner from './components/Banner'
 import "./App.css";
-import NavBar from './NavBar'
+import NavBar from './components/NavBar'
 import request from "./requst";
 
 function App() {
@@ -18,6 +18,9 @@ function App() {
       <Row title="Action" fetchUrl={request.fetchActionMovies} />
       <Row title="Comedy" fetchUrl={request.fetchComedyMovies} />
       <Row title="Documentary" fetchUrl={request.fetchDocumentaries} /> 
+      {/* {
+        essey chnket
+      } */}
     </div>
   );
 }
