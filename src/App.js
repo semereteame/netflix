@@ -19,7 +19,7 @@ function App() {
       <Row title="Comedy" fetchUrl={request.fetchComedyMovies} />
       <Row title="Documentary" fetchUrl={request.fetchDocumentaries} /> 
       {/* {
-        essey chnket
+        essey chnket and semere
       } */}
     </div>
   );
